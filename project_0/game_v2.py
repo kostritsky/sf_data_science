@@ -30,7 +30,7 @@ def score_game(random_predict)->int:
     """
     
     count_ls=[] # список, хранящий кол-во попыток угадывания
-    #np.random.seed(1)    # фиксируем последовательность случайных чисел, задав значение seed
+    np.random.seed(1)    # фиксируем последовательность случайных чисел, задав значение seed
     random_array = np.random.randint(1,501, size=(1000))
     
     for number in random_array:
