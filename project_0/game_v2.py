@@ -57,6 +57,12 @@ def score_game(random_predict, guess_min:int=1, guess_max:int=100)->int:
         int: среднее кол-во попыток угадывания
     """
     
+    # Проверяем, что guess_min < guess_max
+    if guess_min >= guess_max:
+        print(f"Ошибка: максимум {guess_max} не больше минимума {guess_min}")
+        return -1
+      
+    
     count_ls=[] # список, хранящий кол-во попыток угадывания
  #   np.random.seed(1)    # фиксируем последовательность случайных чисел, задав значение seed
     random_array = np.random.randint(guess_min, guess_max+1, size=(1000))
@@ -65,10 +71,11 @@ def score_game(random_predict, guess_min:int=1, guess_max:int=100)->int:
         count_ls.append(random_predict(number, guess_min, guess_max))
         
     score = int(np.mean(count_ls))  # определяем среднее кол-во попыток
-    print(f"Ваш алгоритм угадывает число от {guess_min} до {guess_max} в среднем за {score} попыток")
+    print(f"Ваш алгоритм угадывает число от {guess_min} до {guess_max} \
+    в среднем за {score} попыток")
     
     return score
 
 if __name__ == '__main__':
     # RUN
-    score_game(random_predict)
+    score_game(random_predict, 10, 5)
