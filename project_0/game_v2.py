@@ -24,13 +24,19 @@ def random_predict(number:int=50, guess_min:int=1, guess_max:int=100)->int:
         
         # Предполагаем, что загаданное число - середина интервала
         predict_number = round((guess_min + guess_max)/2)
-        if guess_max - guess_min > 1:
+        
+        # если ширина интервала больше 1
+        if guess_max - guess_min > 1:  
             if number == predict_number:
                 break # число угадано, выходим из цикла
             elif number < predict_number:
                 guess_max = predict_number
             elif number > predict_number:
                 guess_min = predict_number
+                
+        # Если ширина интервала меньше или равно 1,
+        # то либо его минимальное значение - загаданное число,
+        # либо - максимальное значение.
         elif number == guess_min:
             break # число угадано
         elif number == guess_max:
