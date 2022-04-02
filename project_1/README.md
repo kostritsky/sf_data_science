@@ -18,7 +18,7 @@
 :arrow_up:[к оглавлению](https://github.com/kostritsky/sf_data_science/tree/main/project_0/README.md#Оглавление)
 ### **Краткая информация о данных**
 
-Исходные данные резюме находятся в файле по данной [ссылке](hhttps://drive.google.com/file/d/1KHrgptG7Bv0cKAAwOXIeoCxT-pFVSwWv/view?usp=sharing).
+Исходные данные резюме находятся в файле по данной [ссылке](https://drive.google.com/file/d/1KHrgptG7Bv0cKAAwOXIeoCxT-pFVSwWv/view?usp=sharing).
 
 ### **Этапы работы над проектом**
 
@@ -37,12 +37,8 @@
 
 #### **Графики**
 
-Ниже приведены графики, построенные в ходе выполнения проекта и сохраненные в папке `figure`.
+Ниже приведены графики, построенные в ходе выполнения проекта и сохраненные в папке [figure](https://github.com/kostritsky/sf_data_science/tree/main/project_1/figures).
 Нумерация графиков соответствует их нумерации в ноутбуке.
-
-<img src=https://github.com/kostritsky/sf_data_science/blob/main/project_1/figures/fig1.html>
-
-**Fig. 1**
 
 
 
