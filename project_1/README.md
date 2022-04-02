@@ -33,7 +33,7 @@
 
 ### **Результаты**
 
-Ход работы и ее результаты оформлены в виде Jupyther Notebook. 
+Ход работы и ее результаты оформлены в виде [Jupyther Notebook](https://github.com/kostritsky/sf_data_science/blob/main/project_1/Project-1.ipynb). 
 
 #### **Графики**
 
